@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/abibo.png" alt="Logo" class="logo">
+        <h1>Abibo Salesforce Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label for="environment">Environment</label>
+                <select id="environment">
+                    <option value="production">Production</option>
+                    <option value="sandbox">Sandbox</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="group">Group Name</label>
+                <input type="text" id="group" placeholder="Group Name">
+            </div>
+            <button type="submit">Add Credential</button>
+        </form>
+        <div id="credentialsList"></div>
+        <div class="import-export">
+            <button id="importButton">Import</button>
+            <button id="exportButton">Export</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
