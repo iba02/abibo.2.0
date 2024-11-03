@@ -22,7 +22,7 @@
     {
       "matches": ["https://login.salesforce.com/*", "https://test.salesforce.com/*"],
       "js": ["content.js"]
-    }
+    }]
 
 
 }
